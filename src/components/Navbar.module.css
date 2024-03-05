@@ -1,0 +1,6 @@
+.nav{
+    grid-area: nav;
+  }
+.nav .item.active{
+  background-color: aquamarine;
+}
