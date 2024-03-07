@@ -1,0 +1,17 @@
+.app-wrapper{
+  background-color: #49423D;
+}
+.app-wrapper .container{
+  display: grid;
+  grid-template-areas: 
+  "header header"
+  "nav content";
+  grid-template-rows: 90px 1fr;
+  /* grid-template-rows: 1fr 11fr; */
+  width: 80%;
+  margin: auto;
+}
+
+/* .header,.nav,.content{
+
+} */
