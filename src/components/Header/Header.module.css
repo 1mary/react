@@ -1,12 +1,10 @@
 .header{
     grid-area: header;
 }
-.header img{
-    width: 80px;
-}
 .container{
     display: grid;
     grid-template-columns: 4fr 4fr 4fr;
     grid-template-areas: 
     "logo search login";
+    height: 100%;
 }

@@ -1,6 +1,6 @@
 .blockLogin{
     grid-area: login;
 }
-.header img{
-    width: 90px;
+.blockLogo img{
+    width: 50px;
 }
