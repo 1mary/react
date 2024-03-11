@@ -2,5 +2,25 @@
     grid-area: nav;
   }
 .nav .item.active{
-  background-color: aquamarine;
+  background-color: #f1c40f;
+}
+.nav .item.active a{
+  color: black;
+  font-weight: 500;
+}
+.nav .item{
+  height: 40px;
+  width: 90%;
+}
+.nav .item:hover{
+  background-color:#02020294;
+}
+.nav .item.active:hover{
+  background-color: #f1c40f;
+}
+.nav a{
+  color:white;
+  text-decoration: none;
+  padding-left: 15px;
+  vertical-align: -webkit-baseline-middle;
 }
