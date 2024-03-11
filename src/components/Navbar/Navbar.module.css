@@ -24,3 +24,8 @@
   padding-left: 15px;
   vertical-align: -webkit-baseline-middle;
 }
+.nav .item img{
+  width: 15px;
+  margin-right: 5px;
+  margin-top: 6px;
+}

@@ -1,3 +1,9 @@
 .content{
     grid-area: content;
   }
+  .fon{
+    height: 250px;
+  }
+  .block_fon{
+    text-align: center;
+  }
