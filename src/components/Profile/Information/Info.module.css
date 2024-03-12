@@ -1,0 +1,27 @@
+.avatar img{
+  width: 200px;
+  
+  border-radius: 50%;
+}
+.info_block{
+  display: grid;
+  grid-template-columns: 27% 1fr;
+  grid-template-areas: "avatar descr";
+  margin-bottom: 50px;
+}
+.avatar{
+  grid-area: avatar;
+  justify-self: end;
+}
+.description{
+  grid-area: descr;
+  padding-left: 90px;
+  padding-top: 20px;
+  color: white;
+}
+.description div{
+  padding-bottom: 10px;;
+}
+.description .name{
+  font-size: 40px;
+}

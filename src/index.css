@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.btn_main{
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 25px;
+  position: relative;
+  border: 2px solid #f1c40f;
+  color: #f1c40f;
+  font-family: 'Montserrat', sans-serif;
+  transition: .4s;
+}
+.btn_main:hover{
+  background-color: #bab5bb5e;
+}
