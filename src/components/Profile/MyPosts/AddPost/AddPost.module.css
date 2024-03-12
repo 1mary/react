@@ -8,3 +8,10 @@ textarea {
     border-radius: 20px;
     font-family: 'Roboto', sans-serif;
  }
+ .btn_add{
+    margin-left: 5px;
+    margin-top:20px;
+ }
+ .new_post{
+    margin-bottom: 50px;
+ }

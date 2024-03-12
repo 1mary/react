@@ -1,4 +1,30 @@
-.item img{
-    width: 100px;
+.item .photo{
+    width: 75px;
     border-radius: 50%;
+}
+.item{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: auto 20px;
+    grid-template-areas: "photo message"
+                         "feedback feedback";
+    border-bottom: 1px solid #696666;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.photo{
+    grid-area: photo;
+}
+.message{
+    grid-area: message;
+    padding-top: 10px;
+}
+.feedback{
+    grid-area: feedback;
+    display: flex;
+    justify-content: space-between;
+}
+.like img{
+    width: 15px;
+    margin-right: 5px;
 }

@@ -1,12 +1,19 @@
 import React from "react";
 import style from './Post.module.css';
+import photo from './../../Information/img/photo1.jpg';
+import like from './../../img/like.png';
 const Post = (props) => {
     return(
         <div className={style.item}>
-            <img src="https://img.freepik.com/premium-psd/3d-render-of-avatar-character_23-2150611774.jpg" alt="" />
-            {props.message}
-            <div className="">
-                <span>like</span> {props.likesCount}
+            <img className={style.photo} src={photo} alt="" />
+            <div className={style.message}>{props.message}</div>      
+            <div className={style.feedback}>
+                <div className={style.date}>{props.date}</div>
+                <div className={style.like}>
+                    <img src={like} alt="like" />
+                    {props.likesCount}
+                </div>
+                
             </div>
         </div>
     )
