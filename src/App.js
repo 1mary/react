@@ -1,6 +1,7 @@
 //import logo from './logo.svg';
 import style from './App.module.css';
 import Header from './components/Header/Header';
+import Messages from './components/Messages/Messages';
 import Navbar from './components/Navbar/Navbar';
 import Profile from './components/Profile/Profile';
 
@@ -10,7 +11,10 @@ function App() {
       <div className={style.container}>
         <Header/>
         <Navbar/>
-        <Profile/>
+        <div className={style["app-wrapper-content"]}>
+          {/* <Profile/> */}
+          <Messages/>
+        </div>
       </div>
     </div>
   );

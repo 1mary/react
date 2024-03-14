@@ -12,6 +12,6 @@
   margin: auto;
 }
 
-/* .header,.nav,.content{
-
-} */
+.app-wrapper-content{
+    grid-area: content;
+}
