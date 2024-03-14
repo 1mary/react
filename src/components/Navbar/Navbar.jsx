@@ -5,13 +5,13 @@ import profile from "./img/profile.png";
 const Navbar = () => {
     return <nav className={style.nav}>
         <div className={`${style.item} ${style.active}`}>
-            <a href="#">
+            <a href="profile">
             <img src={profile} alt="messages" />
                 Profile
             </a>
         </div>
         <div className={style.item}>
-            <a href="#">
+            <a href="messages">
                 {/* <img src={messages} alt="messages" /> */}
                 Messages</a>
         </div>
