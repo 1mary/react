@@ -12,7 +12,7 @@ const Navbar = () => {
             </NavLink>
         </div>
         <div className={style.item}>
-            <NavLink to="messages" className={({ isActive }) => isActive ? `${style.active}` : ""}>
+            <NavLink to="dialogs" className={({ isActive }) => isActive ? `${style.active}` : ""}>
                 {/* <img src={messages} alt="messages" /> */}
                 Messages
             </NavLink>
