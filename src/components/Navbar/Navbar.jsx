@@ -2,22 +2,30 @@ import React from "react";
 import style from './Navbar.module.css';
 import messages from "./img/messages.png";
 import profile from "./img/profile.png";
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
     return <nav className={style.nav}>
-        <div className={`${style.item} ${style.active}`}>
-            <a href="profile">
+        <div className={`${style.item}`}>
+            <NavLink to="profile" className={({ isActive }) => isActive ? `${style.active}` : ""} >
             <img src={profile} alt="messages" />
                 Profile
-            </a>
+            </NavLink>
         </div>
         <div className={style.item}>
-            <a href="messages">
+            <NavLink to="messages" className={({ isActive }) => isActive ? `${style.active}` : ""}>
                 {/* <img src={messages} alt="messages" /> */}
-                Messages</a>
+                Messages
+            </NavLink>
         </div>
-        <div className={style.item}><a href="#">News</a></div>
-        <div className={style.item}><a href="#">Music</a></div>
-        <div className={style.item}><a href="#">Settings</a></div>
+        <div className={style.item}>
+            <NavLink to="news" className={({ isActive }) => isActive ? `${style.active}` : ""}>News</NavLink>
+        </div>
+        <div className={style.item}>
+            <NavLink to="music" className={({ isActive }) => isActive ? `${style.active}` : ""}>Music</NavLink>
+        </div>
+        <div className={style.item}>
+            <NavLink to="settings" className={({ isActive }) => isActive ? `${style.active}` : ""}>Settings</NavLink>
+        </div>
     </nav>
 }
 

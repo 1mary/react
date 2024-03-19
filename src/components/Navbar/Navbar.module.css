@@ -1,10 +1,10 @@
 .nav{
     grid-area: nav;
   }
-.nav .item.active{
+.nav .item .active{
   background-color: #f1c40f;
 }
-.nav .item.active a{
+.nav .item .active a{
   color: black;
   font-weight: 500;
 }
@@ -15,7 +15,7 @@
 .nav .item:hover{
   background-color:#02020294;
 }
-.nav .item.active:hover{
+.nav .item .active:hover{
   background-color: #f1c40f;
 }
 .nav a{
@@ -23,9 +23,11 @@
   text-decoration: none;
   padding-left: 15px;
   vertical-align: -webkit-baseline-middle;
+  display: flex;
+  align-items: center;
+  height: 40px;
 }
 .nav .item img{
   width: 15px;
   margin-right: 5px;
-  margin-top: 6px;
 }
