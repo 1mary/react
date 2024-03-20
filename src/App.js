@@ -16,7 +16,7 @@ function App() {
         <div className={style["app-wrapper-content"]}>
           <Routes>
             <Route path='/profile' Component={Profile}/>
-            <Route exact path='/dialogs' Component={Messages}/>
+            <Route path='/dialogs/*' Component={Messages}/>
           </Routes>
         </div>
       </div>
