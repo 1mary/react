@@ -18,8 +18,8 @@ function App(props) {
         <div className={style["app-wrapper-content"]}>
           <Routes>
             {/* <Route path='/profile' Component={Profile}/> */}
-            <Route  path='/profile' element={<Profile postData={props.postData}/>}/>
-            <Route path='/dialogs/*' element={<Messages dialogsNameData={props.dialogsNameData} messageData={props.messageData}/>}/>
+            <Route  path='/profile' element={<Profile state={props.state.profilePage}/>}/>
+            <Route path='/dialogs/*' element={<Messages state={props.state.messagesPage} />}/>
           </Routes>
         </div>
       </div>

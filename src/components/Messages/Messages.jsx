@@ -8,8 +8,8 @@ import Message from "./Message/Message";
 const Messages = (props) => {
 
     //массив jsx элементов
-    let dialogsNameElements=props.dialogsNameData.map( dialog=><DialogName name={dialog.name} id={dialog.id}/>);
-    let messageElements=props.messageData.map(message=><Message message={message.message}/>)
+    let dialogsNameElements=props.state.dialogsNameData.map( dialog=><DialogName name={dialog.name} id={dialog.id}/>);
+    let messageElements=props.state.messageData.map(message=><Message message={message.message}/>)
     return <div className={style.dialogs}>
                 <div className={style.dialogsItems}>
                     {dialogsNameElements}

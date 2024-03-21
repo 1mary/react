@@ -9,7 +9,7 @@ const Profile = (props) => {
                     <img src={fon} alt="" className={style.fon}/>
                 </div>
                 <Info/>
-                <MyPosts postData={props.postData}/>
+                <MyPosts postData={props.state.postData}/>
             </div>
 }
 
