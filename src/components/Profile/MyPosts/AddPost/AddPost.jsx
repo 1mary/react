@@ -1,11 +1,12 @@
 import React from "react";
 import style from './AddPost.module.css';
 
-const AddPost = () => {
+const AddPost = (props) => {
     var newPostElement=React.createRef();
-    var addPost=()=>{
+    
+    let addPost=()=>{
         var text=newPostElement.current.value;
-        alert(text);
+        props.addPost(text);
     };
     return(
                 <div className={style.new_post}>

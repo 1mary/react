@@ -5,7 +5,7 @@ import AddPost from "./AddPost/AddPost";
 const MyPosts = (props) => {
     let postElements=props.postData.map(post=><Post message={post.message} likesCount={post.likesCount} date={post.date}/>);
     return <div className="">
-                <AddPost/>
+                <AddPost addPost={props.addPost}/>
                 <div className={style.posts}>
                     {postElements}               
                 </div>

@@ -10,7 +10,7 @@ const Search = () => {
                        <img className={style.search} src={search} alt="" />
                     </button>
             </form>
-            <i class="fa-solid fa-neuter"></i>
+            <i className="fa-solid fa-neuter"></i>
         </div>
     )
 }
