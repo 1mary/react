@@ -4,7 +4,8 @@ import style from './AddPost.module.css';
 const AddPost = (props) => {
     var newPostElement=React.createRef();
     
-    let addPost=()=>{
+    let addPost=(event)=>{
+        event.preventDefault();
         var text=newPostElement.current.value;
         props.addPost(text);
     };
