@@ -6,6 +6,7 @@ var state={
             {id:1, message:"Единственный способ сделать это - это сделать.",likesCount:11, date:"05.03.1999"},
             {id:1, message:"Ты должен любить танцы, чтобы придерживаться этого. Это ничего не дает, никаких рукописей для хранения, никаких картин для показа на стенах и, возможно, висят в музеях, никаких поэм для печати и продажи, ничего, кроме этого мимолетного момента, когда вы чувствуете себя живым. Это не для неустойчивых душ.",likesCount:39,date:'25.10.1929'},
         ],
+        newPostText:""
     },
     messagesPage:{
         dialogsNameData:[
@@ -24,13 +25,18 @@ var state={
     
 }
 
-export let addPost=(postMessage)=>{
+export let addPost=()=>{
     var newPost={
         id:5,
-        message:postMessage,
+        message:state.profilePage.newPostText,
         likesCount:0
     };
     state.profilePage.postData.push(newPost);
+    newTextPost("");
+    rerenderEntireTree(state);
+}
+export let newTextPost=(postMessage)=>{
+    state.profilePage.newPostText=postMessage;
     rerenderEntireTree(state);
 }
 export default state;
