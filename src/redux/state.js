@@ -1,3 +1,7 @@
+import { type } from "@testing-library/user-event/dist/type";
+const ADD_POST="ADD-POST";
+const NEW_TEXT="NEW-TEXT";
+
 let store={
     _state:{
         profilePage:{
@@ -52,5 +56,6 @@ let store={
     },
 }
 
-
+export const addPostActionCreator=()=>({type:ADD_POST});
+export const newTextActionCreator=(text)=>({type:NEW_TEXT, newText:text})
 export default store;

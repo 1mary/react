@@ -1,21 +1,18 @@
 import React from "react";
 import style from './AddPost.module.css';
+import { addPostActionCreator, newTextActionCreator } from "../../../../redux/state";
 
 const AddPost = (props) => {
     var newPostElement=React.createRef();
     
     let addPost=(event)=>{
         event.preventDefault();
-        props.dispatch({type:"ADD-POST"});
+        props.dispatch(addPostActionCreator());
     };
     let newText=(event)=>{
         //event.preventDefault();
         var text=newPostElement.current.value;
-        var action={
-            type:"NEW-TEXT",
-            newText:text
-        }
-        props.dispatch(action);
+        props.dispatch(newTextActionCreator(text));
     }
     return(
                 <div className={style.new_post}>
