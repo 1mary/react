@@ -6,12 +6,16 @@ const AddPost = (props) => {
     
     let addPost=(event)=>{
         event.preventDefault();
-        props.addPost();
+        props.dispatch({type:"ADD-POST"});
     };
     let newText=(event)=>{
         //event.preventDefault();
         var text=newPostElement.current.value;
-        props.newTextPost(text);
+        var action={
+            type:"NEW-TEXT",
+            newText:text
+        }
+        props.dispatch(action);
     }
     return(
                 <div className={style.new_post}>

@@ -22,27 +22,34 @@ let store={
             ]
         },
     },
+    _callSubscriber(){},
+    subscribe(observer){
+        this._callSubscriber=observer;//наблюдатель
+    },
     getState(){
         return this._state;
     },
-    _callSubscriber(){},
-    addPost(){
+    _addPost(){
         var newPost={
             id:5,
             message:this._state.profilePage.newPostText,
             likesCount:0
         };
         this._state.profilePage.postData.push(newPost);
-        this.newTextPost("");
+        this._newTextPost("");
         this._callSubscriber(this._state);
     },
-    newTextPost(postMessage){
+    _newTextPost(postMessage){
         this._state.profilePage.newPostText=postMessage;
         this._callSubscriber(this._state);
     },
-    subscribe(observer){
-        this._callSubscriber=observer;//наблюдатель
-    }
+    dispatch(action){
+        if(action.type==="ADD-POST"){
+            this._addPost();
+        }else if(action.type==="NEW-TEXT"){
+            this._newTextPost(action.newText);
+        }
+    },
 }
 
 
