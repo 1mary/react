@@ -42,5 +42,5 @@ export const newTextPost=(postMessage)=>{
 
 export const subscribe=(observer)=>{
     rerenderEntireTree=observer;//наблюдатель
-}
+} 
 export default state;
